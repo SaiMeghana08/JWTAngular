@@ -4,10 +4,11 @@ import { Router, RouterLink } from '@angular/router';
 import { AuthStorage } from '../../Services/auth-storage';
 import { CommonModule } from '@angular/common';
 import { UserService } from '../../Services/user-service';
-
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatButtonModule} from '@angular/material/button';
 @Component({
   selector: 'app-header',
-  imports: [RouterLink,FormsModule,CommonModule],
+  imports: [RouterLink,FormsModule,CommonModule,MatToolbarModule,MatButtonModule],
   templateUrl: './header.html',
   styleUrl: './header.css',
 })
